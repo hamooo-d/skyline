@@ -15,7 +15,6 @@
 import React, { Component } from 'react';
 import { inject, observer } from 'mobx-react';
 import renderRoutes from 'utils/RouterConfig';
-import SelectLang from 'components/SelectLang';
 
 import logo from 'asset/image/logo.png';
 import loginFullImage from 'asset/image/login-full.png';
@@ -51,14 +50,9 @@ export class AuthLayout extends Component {
     return (
       <div className={styles.container}>
         <div className={styles.left}>
-          <div className={styles.lang}>
-            <SelectLang />
-          </div>
           <div className={styles.main}>
             <div className={styles.top}>
-              <div className={styles.header}>
-                <img alt="logo" className={styles.logo} src={logo} />
-              </div>
+              <div className={styles.header}>1stVault</div>
             </div>
             {renderRoutes(this.routes)}
           </div>
